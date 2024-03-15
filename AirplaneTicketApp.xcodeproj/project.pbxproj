@@ -13,6 +13,11 @@
 		0765716528653A9F0007ABB2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0765716428653A9F0007ABB2 /* Assets.xcassets */; };
 		0765716828653A9F0007ABB2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0765716628653A9F0007ABB2 /* LaunchScreen.storyboard */; };
 		0765716B28653A9F0007ABB2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0765716A28653A9F0007ABB2 /* main.m */; };
+		0765717A286548200007ABB2 /* Ticket.m in Sources */ = {isa = PBXBuildFile; fileRef = 07657175286548200007ABB2 /* Ticket.m */; };
+		0765717B286548200007ABB2 /* Store.m in Sources */ = {isa = PBXBuildFile; fileRef = 07657178286548200007ABB2 /* Store.m */; };
+		07657181286560750007ABB2 /* Purchase.m in Sources */ = {isa = PBXBuildFile; fileRef = 07657180286560750007ABB2 /* Purchase.m */; };
+		07657184286562BA0007ABB2 /* Voucher.m in Sources */ = {isa = PBXBuildFile; fileRef = 07657183286562BA0007ABB2 /* Voucher.m */; };
+		0765718728656EBA0007ABB2 /* PurchaseDetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0765718628656EBA0007ABB2 /* PurchaseDetailsViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +31,16 @@
 		0765716728653A9F0007ABB2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0765716928653A9F0007ABB2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0765716A28653A9F0007ABB2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		076571732865481F0007ABB2 /* Store.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Store.h; sourceTree = "<group>"; };
+		07657175286548200007ABB2 /* Ticket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Ticket.m; sourceTree = "<group>"; };
+		07657176286548200007ABB2 /* Ticket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Ticket.h; sourceTree = "<group>"; };
+		07657178286548200007ABB2 /* Store.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Store.m; sourceTree = "<group>"; };
+		0765717F286560750007ABB2 /* Purchase.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Purchase.h; sourceTree = "<group>"; };
+		07657180286560750007ABB2 /* Purchase.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Purchase.m; sourceTree = "<group>"; };
+		07657182286562BA0007ABB2 /* Voucher.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Voucher.h; sourceTree = "<group>"; };
+		07657183286562BA0007ABB2 /* Voucher.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Voucher.m; sourceTree = "<group>"; };
+		0765718528656EBA0007ABB2 /* PurchaseDetailsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PurchaseDetailsViewController.h; sourceTree = "<group>"; };
+		0765718628656EBA0007ABB2 /* PurchaseDetailsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PurchaseDetailsViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,10 +73,10 @@
 		0765715A28653A9E0007ABB2 /* AirplaneTicketApp */ = {
 			isa = PBXGroup;
 			children = (
+				07657172286547230007ABB2 /* Controller */,
+				076571712865470E0007ABB2 /* Model */,
 				0765715B28653A9E0007ABB2 /* AppDelegate.h */,
 				0765715C28653A9E0007ABB2 /* AppDelegate.m */,
-				0765715E28653A9E0007ABB2 /* ViewController.h */,
-				0765715F28653A9E0007ABB2 /* ViewController.m */,
 				0765716128653A9E0007ABB2 /* Main.storyboard */,
 				0765716428653A9F0007ABB2 /* Assets.xcassets */,
 				0765716628653A9F0007ABB2 /* LaunchScreen.storyboard */,
@@ -69,6 +84,32 @@
 				0765716A28653A9F0007ABB2 /* main.m */,
 			);
 			path = AirplaneTicketApp;
+			sourceTree = "<group>";
+		};
+		076571712865470E0007ABB2 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				076571732865481F0007ABB2 /* Store.h */,
+				07657178286548200007ABB2 /* Store.m */,
+				07657176286548200007ABB2 /* Ticket.h */,
+				07657175286548200007ABB2 /* Ticket.m */,
+				0765717F286560750007ABB2 /* Purchase.h */,
+				07657180286560750007ABB2 /* Purchase.m */,
+				07657182286562BA0007ABB2 /* Voucher.h */,
+				07657183286562BA0007ABB2 /* Voucher.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		07657172286547230007ABB2 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				0765715E28653A9E0007ABB2 /* ViewController.h */,
+				0765715F28653A9E0007ABB2 /* ViewController.m */,
+				0765718528656EBA0007ABB2 /* PurchaseDetailsViewController.h */,
+				0765718628656EBA0007ABB2 /* PurchaseDetailsViewController.m */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -141,7 +182,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0765718728656EBA0007ABB2 /* PurchaseDetailsViewController.m in Sources */,
+				07657181286560750007ABB2 /* Purchase.m in Sources */,
+				0765717A286548200007ABB2 /* Ticket.m in Sources */,
+				07657184286562BA0007ABB2 /* Voucher.m in Sources */,
 				0765716028653A9E0007ABB2 /* ViewController.m in Sources */,
+				0765717B286548200007ABB2 /* Store.m in Sources */,
 				0765716B28653A9F0007ABB2 /* main.m in Sources */,
 				0765715D28653A9E0007ABB2 /* AppDelegate.m in Sources */,
 			);
